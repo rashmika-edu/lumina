@@ -45,7 +45,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-white border border-blue-100 text-blue-700 text-xs font-bold mb-6 shadow-sm">
                 <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-ping"></span>
-                Supporting 20+ Schools Islandwide
+                Supporting 10,000+ Schools Islandwide
             </div>
             <h1 class="text-5xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight leading-tight">
                 Digitalizing the Heart of <br/>
@@ -156,7 +156,237 @@
                         <div class="md:col-span-2">
                             <label class="block text-xs font-bold uppercase mb-2 text-blue-200">Principal Email</label>
                             <input type="email" placeholder="principal@school.lk" class="w-full px-5 py-4 rounded-xl bg-blue-800 border border-blue-500 text-white placeholder:text-blue-300 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Pro | Sri Lanka School Library Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .sri-lanka-gradient { background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); }
+        [data-i18n] { transition: opacity 0.2s ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-3">
+                    <div class="bg-blue-700 p-2 rounded-xl shadow-lg shadow-blue-200">
+                        <i data-lucide="graduation-cap" class="text-white w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-slate-900 block leading-none">Lumina<span class="text-blue-700">Pro</span></span>
+                        <span data-i18n="nav-subtitle" class="text-[10px] font-bold text-slate-500 uppercase tracking-widest">School Edition</span>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#features" data-i18n="nav-features" class="hover:text-blue-700 transition">Features</a>
+                    <a href="#register" data-i18n="nav-register-link" class="hover:text-blue-700 transition">Registration</a>
+                    <select id="langSelector" onchange="changeLanguage(this.value)" class="bg-transparent border-none text-blue-700 font-bold focus:ring-0 cursor-pointer">
+                        <option value="en">English</option>
+                        <option value="si">සිංහල</option>
+                        <option value="ta">தமிழ்</option>
+                    </select>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button onclick="location.href='#register'" class="bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-800 transition shadow-lg shadow-blue-200 flex items-center gap-2">
+                        <i data-lucide="school" class="w-4 h-4"></i> <span data-i18n="btn-register-top">Register School</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 sri-lanka-gradient relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-white border border-blue-100 text-blue-700 text-xs font-bold mb-6 shadow-sm">
+                <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-ping"></span>
+                <span data-i18n="hero-badge">Supporting 20+ Schools Islandwide</span>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-black text-slate-900 mb-6 tracking-tight leading-tight">
+                <span data-i18n="hero-title-1">Digitalizing the Heart of</span> <br/>
+                <span class="text-blue-700" data-i18n="hero-title-2">Sri Lankan Education.</span>
+            </h1>
+            <p data-i18n="hero-desc" class="max-w-3xl mx-auto text-lg text-slate-600 mb-10 leading-relaxed">
+                The best library system designed for Sri Lankan National and Provincial schools. Manage Sinhala, Tamil, and English collections with Ministry-compliant reporting.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <a href="#register" class="bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-slate-800 transition shadow-2xl flex items-center justify-center gap-3">
+                    <span data-i18n="btn-enroll">Enrol Your School</span> <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="py-24 bg-slate-900 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div class="bg-blue-700 rounded-[3rem] p-8 md:p-16 relative overflow-hidden shadow-2xl">
+                <i data-lucide="building-2" class="absolute -right-10 -bottom-10 w-64 h-64 text-blue-600 opacity-20"></i>
+                
+                <div class="relative z-10 text-center">
+                    <h2 class="text-3xl md:text-4xl font-black mb-6" data-i18n="form-title">Register Your School Today</h2>
+                    <p class="text-blue-100 mb-10 text-lg" data-i18n="form-desc">Registration is free for Government Schools. Submit via WhatsApp for instant verification.</p>
+                    
+                    <form id="registrationForm" class="grid md:grid-cols-2 gap-4 text-left">
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-2 text-blue-200" data-i18n="label-school">School Name</label>
+                            <input type="text" id="schoolName" required placeholder="e.g. Royal College" class="w-full px-5 py-4 rounded-xl bg-blue-800 border border-blue-500 text-white placeholder:text-blue-300 focus:outline-none focus:ring-2 focus:ring-white">
                         </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase mb-2 text-blue-200" data-i18n="label-census">Census Number</label>
+                            <input type="text" id="censusNo" required placeholder="SC-XXXXX" class="w-full px-5 py-4 rounded-xl bg-blue-800 border border-blue-500 text-white placeholder:text-blue-300 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold uppercase mb-2 text-blue-200" data-i18n="label-email">Principal Email/Contact</label>
+                            <input type="text" id="contactInfo" required placeholder="principal@school.lk" class="w-full px-5 py-4 rounded-xl bg-blue-800 border border-blue-500 text-white placeholder:text-blue-300 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <button type="button" onclick="sendToWhatsApp()" class="md:col-span-2 bg-emerald-500 text-white py-5 rounded-2xl font-black text-xl hover:bg-emerald-600 transition shadow-xl mt-4 flex items-center justify-center gap-3">
+                            <i data-lucide="message-circle"></i> <span data-i18n="btn-submit">SUBMIT VIA WHATSAPP</span>
+                        </button>
+                    </form>
+                    <p class="mt-6 text-sm text-blue-200" data-i18n="form-footer">Our provincial coordinator will contact you via WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-20 pb-10 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 font-medium">
+                <p>&copy; 2026 Lumina Pro by K.A.V.Rashmika. All Rights Reserved.</p>
+                <div class="flex gap-4 uppercase tracking-widest">
+                    <button onclick="changeLanguage('si')" class="hover:text-blue-700">Sinhala</button> | 
+                    <button onclick="changeLanguage('ta')" class="hover:text-blue-700">Tamil</button> | 
+                    <button onclick="changeLanguage('en')" class="hover:text-blue-700">English</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Translation Data
+        const translations = {
+            en: {
+                "nav-subtitle": "School Edition",
+                "nav-features": "Features",
+                "nav-register-link": "Registration",
+                "btn-register-top": "Register School",
+                "hero-badge": "Supporting 20+ Schools Islandwide",
+                "hero-title-1": "Digitalizing the Heart of",
+                "hero-title-2": "Sri Lankan Education.",
+                "hero-desc": "The first trilingual library system designed for Sri Lankan National and Provincial schools. Manage Sinhala, Tamil, and English collections with Ministry-compliant reporting.",
+                "btn-enroll": "Enrol Your School",
+                "form-title": "Register Your School Today",
+                "form-desc": "Registration is free for Government Schools. Submit via WhatsApp for instant verification.",
+                "label-school": "School Name",
+                "label-census": "Census Number",
+                "label-email": "Principal Email/Contact",
+                "btn-submit": "SUBMIT VIA WHATSAPP",
+                "form-footer": "Our provincial coordinator will contact you via WhatsApp."
+            },
+            si: {
+                "nav-subtitle": "පාසල් සංස්කරණය",
+                "nav-features": "විශේෂාංග",
+                "nav-register-link": "ලියාපදිංචිය",
+                "btn-register-top": "පාසල ලියාපදිංචි කරන්න",
+                "hero-badge": "දිවයින පුරා පාසල් 20කට අධික සංඛ්‍යාවකට සහාය වේ",
+                "hero-title-1": "ශ්‍රී ලංකා අධ්‍යාපනයේ හදවත",
+                "hero-title-2": "ඩිජිටල්කරණය කිරීම.",
+                "hero-desc": "ශ්‍රී ලංකාවේ ජාතික සහ පළාත් පාසල් සඳහා නිර්මාණය කරන ලද ප්‍රථම ත්‍රෛභාෂා පුස්තකාල පද්ධතිය. සිංහල, දෙමළ සහ ඉංග්‍රීසි පොත් එකතු කළමනාකරණය කරන්න.",
+                "btn-enroll": "ඔබේ පාසල ඇතුළත් කරන්න",
+                "form-title": "අදම ඔබේ පාසල ලියාපදිංචි කරන්න",
+                "form-desc": "රජයේ පාසල් සඳහා ලියාපදිංචිය නොමිලේ. කඩිනම් තහවුරු කිරීම සඳහා WhatsApp හරහා යොමු කරන්න.",
+                "label-school": "පාසලේ නම",
+                "label-census": "සංගණන අංකය (Census No)",
+                "label-email": "විදුහල්පති විද්‍යුත් තැපෑල/සම්බන්ධීකරණ අංකය",
+                "btn-submit": "WHATSAPP හරහා යොමු කරන්න",
+                "form-footer": "අපගේ පළාත් සම්බන්ධීකාරක ඔබව WhatsApp හරහා සම්බන්ධ කර ගනු ඇත."
+            },
+            ta: {
+                "nav-subtitle": "பள்ளிப் பதிப்பு",
+                "nav-features": "அம்சங்கள்",
+                "nav-register-link": "பதிவு",
+                "btn-register-top": "பள்ளியைப் பதிவு செய்க",
+                "hero-badge": "தீவு முழுவதும் 10,000+ பள்ளிகளுக்கு ஆதரவு",
+                "hero-title-1": "இலங்கை கல்வியின் மையத்தை",
+                "hero-title-2": "டிஜிட்டல் மயமாக்கல்.",
+                "hero-desc": "இலங்கை தேசிய மற்றும் மாகாணப் பள்ளிகளுக்காக வடிவமைக்கப்பட்ட முதல் மும்மொழி நூலக அமைப்பு. சிங்களம், தமிழ் மற்றும் ஆங்கில சேகரிப்புகளை நிர்வகிக்கவும்.",
+                "btn-enroll": "உங்கள் பள்ளியைப் பதிவுசெய்க",
+                "form-title": "இன்றே உங்கள் பள்ளியைப் பதிவு செய்யுங்கள்",
+                "form-desc": "அரசுப் பள்ளிகளுக்குப் பதிவு இலவசம். உடனடி சரிபார்ப்புக்கு WhatsApp மூலம் சமர்ப்பிக்கவும்.",
+                "label-school": "பள்ளியின் பெயர்",
+                "label-census": "census எண்",
+                "label-email": "அதிபர் மின்னஞ்சல்/தொடர்பு",
+                "btn-submit": "WHATSAPP மூலம் சமர்ப்பிக்கவும்",
+                "form-footer": "எங்கள் மாகாண ஒருங்கிணைப்பாளர் உங்களை WhatsApp மூலம் தொடர்புகொள்வார்."
+            }
+        };
+
+        // 2. Language Change Function
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+            document.documentElement.lang = lang;
+            // Persist preference
+            localStorage.setItem('preferredLang', lang);
+            document.getElementById('langSelector').value = lang;
+        }
+
+        // 3. WhatsApp Submission Logic
+        function sendToWhatsApp() {
+            const school = document.getElementById('schoolName').value;
+            const census = document.getElementById('censusNo').value;
+            const contact = document.getElementById('contactInfo').value;
+
+            if (!school || !census || !contact) {
+                alert("Please fill all fields before submitting.");
+                return;
+            }
+
+            const phoneNumber = "94771234567"; // Replace with actual coordinator number
+            const message = `*Lumina Pro Registration Request*\n\n` +
+                            `*School:* ${school}\n` +
+                            `*Census No:* ${census}\n` +
+                            `*Principal/Contact:* ${contact}\n\n` +
+                            `Please verify our school for the Library Management System.`;
+            
+            const whatsappUrl = `https://wa.me/${94788932009}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Initialize Icons and Language on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            const savedLang = localStorage.getItem('preferredLang') || 'en';
+            changeLanguage(savedLang);
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'bg-white');
+            } else {
+                nav.classList.remove('shadow-lg', 'bg-white');
+            }
+        });
+    </script>
+</body>
+</html>
                         <button type="button" class="md:col-span-2 bg-white text-blue-700 py-5 rounded-2xl font-black text-xl hover:bg-slate-100 transition shadow-xl mt-4">
                             SUBMIT REGISTRATION
                         </button>
@@ -175,7 +405,7 @@
                         <i data-lucide="graduation-cap" class="text-blue-700 w-6 h-6"></i>
                         <span class="text-xl font-bold text-slate-900">LuminaPro</span>
                     </div>
-                    <p class="text-slate-500 text-sm">Free Library Partner for Sri Lankan Schools. Supporting the vision of a digitalized education system.</p>
+                    <p class="text-slate-500 text-sm">Best Library Partner for Sri Lankan Schools. Supporting the vision of a digitalized education system.</p>
                 </div>
                 <div class="text-center">
                     <h4 class="font-bold mb-4">Contact Info</h4>
@@ -185,14 +415,14 @@
                 <div class="text-center md:text-right">
                     <h4 class="font-bold mb-4">Quick Links</h4>
                     <div class="flex justify-center md:justify-end gap-4 text-sm font-semibold text-blue-700">
-                        <a href="https://moe.gov.lk">MOE Portal</a>
                         <a href="https://rashmika-edu.github.io/lib">Staff Login</a>
+                        <a href="https://moe.gov.lk">MOE Portal</a>
                         <a href="#">Privacy</a>
                     </div>
                 </div>
             </div>
             <div class="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400 font-medium">
-                <p>&copy; 2026 Lumina Pro Sri Lanka by K.A.V.Rashmika. All Rights Reserved.</p>
+                <p>&copy; 2026 Lumina Pro by K.A.V.Rashmika. All Rights Reserved.</p>
                 <div class="flex gap-4 uppercase tracking-widest">
                     <span>Sinhala</span> | <span>Tamil</span> | <span>English</span>
                 </div>
